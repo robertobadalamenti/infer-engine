@@ -1,0 +1,6 @@
+models/
+build/
+*.o
+*.dSYM/
+.DS_Store
+.claude/settings.local.json
