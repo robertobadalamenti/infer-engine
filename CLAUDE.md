@@ -62,6 +62,28 @@ Se il concetto è già "understood and verified", procedere direttamente senza r
 
 **Criterio di applicazione**: questa regola vale per concetti architetturali nuovi (es. GQA, MoE, quantizzazione) — non per dettagli implementativi minori (es. naming di una variabile, scelta di un tipo C) dove fermarsi a fare quiz sarebbe solo un rallentamento inutile. Nel dubbio, propendere per chiedere piuttosto che assumere.
 
+## Livello di conoscenza C
+
+Non so nulla di C — vengo da Node.js/TypeScript. Questa regola vale per ogni sessione:
+
+1. Ogni volta che usi un concetto C non ovvio per chi viene da un linguaggio managed
+   (gestione manuale della memoria, comportamento indefinito, allineamento, endianness,
+   puntatori, macro del preprocessore, specificatori di formato, tipi a dimensione
+   fissa, ecc.), spiegalo prima o insieme al codice — non darlo per scontato.
+2. Se stai per scrivere codice che usa un'idiomatica C non ancora vista in questo
+   progetto, fermati e spiegala prima, anche se ti sembra elementare.
+3. Se una risposta conterrebbe più di 2-3 concetti nuovi insieme, non buttarli tutti
+   in una lista — introducili uno o due alla volta.
+4. Vedi @docs/c-glossary.md per i concetti già spiegati. Se ne usi uno nuovo, non
+   presente lì, spiegalo e poi aggiungilo al file con lo stesso formato delle voci
+   esistenti (breve: cos'è, perché conta in questo progetto).
+5. Se un concetto è già nel glossario, puoi darlo per acquisito e non ripeterlo —
+   a meno che io non dica esplicitamente di essermelo dimenticato.
+
+Il codice di questo progetto lo scrivo io. Tu fai da guida/didattica: spieghi il
+perché delle scelte, indichi struttura e insidie, verifichi con domande i concetti
+architetturali non banali — ma non scrivi il codice del motore al posto mio.
+
 ---
 
 ## Principi di sviluppo
