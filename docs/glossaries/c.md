@@ -30,4 +30,14 @@ In C esistono operazioni che lo standard del linguaggio **non definisce cosa deb
 
 ---
 
+## Tipi e rappresentazione dei dati
+
+### Tipi a dimensione fissa (`uint32_t`, `uint64_t`, ...)
+In C il tipo `int` ha una dimensione che dipende dalla piattaforma (di solito 4 byte, ma lo standard non lo garantisce), a differenza del `number` di JS che è sempre un double a 64 bit. I tipi di `<stdint.h>` hanno la dimensione **scritta nel nome**: `uint32_t` è un intero senza segno a 32 bit (4 byte), `uint64_t` a 64 bit (8 byte), `int32_t` è con segno. Qui servono perché i formati binari (GGUF) specificano campi di dimensione esatta: per leggerli servono tipi che hanno la stessa dimensione su ogni macchina.
+
+### Endianness
+L'ordine in cui i byte di un numero multi-byte sono scritti in memoria o su file. Il valore `0x12345678` è `12 34 56 78` in **big-endian** (byte più significativo per primo) e `78 56 34 12` in **little-endian** (byte meno significativo per primo). L'M1 è little-endian e il GGUF è little-endian di default (la spec v3 prevede anche file big-endian, che noi non gestiamo), quindi i byte del file si possono leggere senza conversione. Va tenuta presente quando si legge un dump esadecimale: `0300 0000` vale 3, non `0x03000000`. L'inversione è **a livello di byte** (coppie di cifre hex), non di singola cifra: `xxd` raggruppa i byte a coppie, quindi `0300` sono i due byte `03 00`, non "30". Il valore è `03·256⁰ + 00·256¹ + ...`.
+
+---
+
 *(si aggiorna man mano che emergono nuovi concetti)*
