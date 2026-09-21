@@ -4,7 +4,11 @@ Contratto operativo per qualunque agente (Claude Code o altro) che lavori su que
 
 Il dettaglio teorico completo vive in `docs/theory/theory-summary.md`, incluso lo stato di avanzamento (`Learning state`) di cosa è stato compreso/verificato. Consultalo prima di implementare qualunque componente legato a un concetto teorico.
 
-**Lingua**: la conversazione in sessione è in italiano. Gli output scritti del progetto (documentazione, commenti nel codice dove serve prosa, blog post) sono in inglese — vedi "Roadmap a più ampio raggio" per il blog.
+**Lingua**: la conversazione in sessione è in italiano.
+
+- **Italiano**: tutto il materiale che serve a Roberto per imparare — `docs/theory/theory-summary.md`, `docs/glossaries/c.md`, `docs/glossaries/llm.md`, `docs/learning-notes.md`. Sono strumenti di studio, non materiale da mostrare a terzi: vanno nella lingua in cui Roberto ci ragiona meglio.
+- **Inglese**: solo ciò che è pensato per essere letto da altri fuori dal progetto — `README.md` (lo scrive Roberto, non toccarlo — vedi sotto) e i futuri post del blog.
+- Commenti nel codice sorgente: inglese (convenzione standard, è codice che finirà su GitHub pubblico).
 
 ## Cos'è questo progetto (e cosa non è)
 
