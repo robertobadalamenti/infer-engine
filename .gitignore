@@ -4,3 +4,4 @@ build/
 *.dSYM/
 .DS_Store
 .claude/settings.local.json
+docs/learning-notes.md
