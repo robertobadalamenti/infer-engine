@@ -1,0 +1,24 @@
+{
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#E4002B20",
+        "titleBar.activeForeground": "#fff",
+        "titleBar.inactiveBackground": "#E4002B0a",
+        "statusBar.background": "#E4002B20",
+        "statusBar.foreground": "#fff"
+    },
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "tailwindCSS.experimental.classRegex": [
+        [
+            "clsx\\(([^)]*)\\)",
+            "(?:'|\"|`)([^']*)(?:'|\"|`)"
+        ]
+    ],
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+}
