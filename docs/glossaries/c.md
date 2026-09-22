@@ -40,4 +40,14 @@ L'ordine in cui i byte di un numero multi-byte sono scritti in memoria o su file
 
 ---
 
+## Sistema operativo e I/O
+
+### File descriptor (`open` / `close`)
+Un piccolo numero intero che il sistema operativo ti dà per riferirti a un file aperto. `open(percorso, flag)` lo restituisce, **`-1` in caso di errore**, e alla fine si chiude con `close(fd)`. È lo stesso concetto di `fs.openSync` in Node, che restituisce un numero. Qui serve per passare il file a `mmap`.
+
+### printf e specificatori di formato
+`printf("testo %d\n", x)` stampa testo e sostituisce ogni `%…` con un valore. In C **il tipo giusto va scelto a mano**: `%d` per `int`, `%s` per stringhe terminate da NUL, `%zu` per `size_t` (dimensioni), `%llu` per `unsigned long long`. Sbagliare lo specificatore è comportamento indefinito: può stampare spazzatura senza dare errore.
+
+---
+
 *(si aggiorna man mano che emergono nuovi concetti)*
