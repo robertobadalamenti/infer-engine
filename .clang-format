@@ -1,0 +1,3 @@
+# Project-wide C style, read by clangd, cpptools and the clang-format CLI.
+BasedOnStyle: LLVM
+PointerAlignment: Right

@@ -86,7 +86,7 @@ Non so nulla di C — vengo da Node.js/TypeScript. Questa regola vale per ogni s
    progetto, fermati e spiegala prima, anche se ti sembra elementare.
 3. Se una risposta conterrebbe più di 2-3 concetti nuovi insieme, non buttarli tutti
    in una lista — introducili uno o due alla volta.
-4. Vedi @docs/glossaries/c.md per i concetti già spiegati. Se ne usi uno nuovo, non
+4. Vedi docs/glossaries/c.md per i concetti già spiegati. Se ne usi uno nuovo, non
    presente lì, spiegalo e poi aggiungilo al file con lo stesso formato delle voci
    esistenti (breve: cos'è, perché conta in questo progetto).
 5. Se un concetto è già nel glossario, puoi darlo per acquisito e non ripeterlo —
