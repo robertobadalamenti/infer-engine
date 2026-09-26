@@ -21,4 +21,15 @@
         "typescript",
         "typescriptreact"
     ],
+    "files.associations": {
+        "*.h": "c"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+        "editor.formatOnSave": true
+    },
+    "[makefile]": {
+        "editor.insertSpaces": false,
+        "editor.detectIndentation": false
+    },
 }
